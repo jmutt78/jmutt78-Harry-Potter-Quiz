@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Harry Potter Trivia</title>
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header role="header">
+    <img class="header-image" src="/Users/justinmcintosh/Desktop/Projects/HarryP-Quiz-App/2d0b32de425b8b06be204f148d146849.png" alt="Harry Potter Icon">
+    <h1>Harry Potter Trivia</h1>
+  </header>
+  <main role="main-content">
+  <!-- */*************************START PAGE**************************/* -->
+  <section class="start-screen" role="start-page">
+    <h3>In order to recieve your letter to Hogwarts, you must receive at least a 7 out of 10. Good Luck!</h3>
+    <button id="start-button" class="button" type="button">Start</button>
+  </section>
+  <!-- */******************QUESTIONS********/* -->
+  <section class="question-form" role="question-set">
+    <form>
+  		<fieldset>
+  			<div id="question" role="radio answers" >the question here</div>
+          <div class='radio-item'>
+              <input type="radio" id="answer-1" name='answers' tabindex='0'/>
+              <label for="answer1">answer1</label>
+              <input type="radio" id=“answer-2" name='answers' tabindex='1'/>
+              <label for="answer2">answer2</label>
+              <input type="radio" id=“answer-3" name='answers' tabindex='2'/>
+              <label for="answer3">answer3</label>
+              <input type="radio" id=“answer-4" name='answers' tabindex='3'/>
+              <label for="answer4">answer4</label>
+        </div>
+  		</fieldset>
+  	</form>
+    </section>
+  <p class = 'question-number'></p>
+  <!-- */******************Continue AND SUBMIT BUTTONS********/* -->
+  <section class="continue-submit" role="buttons">
+    <div class="question-buttons">
+      <button id="button-submit" class="button" type="submit">Submit</button>
+      <button id="button-continue" class="button" type="button">Continue</button>
+    </div>
+  </section>
+  <!-- */******************FINAL PAGE********/* -->
+  <section class="final" role="final-page">
+  <div class="final-page" role="final page">
+  <h3>You have completed the quiz!</h3>
+  <h4>Your Final Score Is...</h4>
+  </div>
+  </section>
+  <!-- */******************SCORE DISPLAY********/* -->
+  <section class="scores" role="display-score">
+  <h5 id ='score-display'>placeholder for score</h5>
+  <h3 id ='correct-display'>placeholder for correct</h3>
+  <div class="passed-test">
+    <h2>Congratulations! You recieved your letter!</h2>
+        <img src="/Users/justinmcintosh/Desktop/Projects/HarryP-Quiz-App/how-to-make-a-hogwarts-envelope-4.jpg" alt="Hogwarts letter">
+</div>
+        <div class="failed-test">
+          <h2>You Muggle! You got a T</h2>
+          <img src="/Users/justinmcintosh/Desktop/Projects/HarryP-Quiz-App/SS-DH-severus-snape-17374797-720-480.jpg" alt="professor snape">
+</div>
+          <button id="try-again" class="button" type="button">Try Again</button>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
